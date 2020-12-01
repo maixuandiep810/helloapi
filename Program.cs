@@ -20,7 +20,7 @@ namespace helloapi
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls("http://localhost:5000", "http://103.90.232.138:5000").UseStartup<Startup>();
                 });
     }
 }
